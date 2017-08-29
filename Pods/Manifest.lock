@@ -1,0 +1,10 @@
+PODS:
+  - SKPhotoBrowser (1.0.1)
+
+DEPENDENCIES:
+  - SKPhotoBrowser
+
+SPEC CHECKSUMS:
+  SKPhotoBrowser: de1a81662d701bebae25647bcdf5d377c9e6f0a8
+
+COCOAPODS: 0.39.0

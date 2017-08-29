@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="190" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="iCook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-qA-K7H">
+                        <rect key="frame" x="122" y="8" width="75" height="75"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="omP-eY-SKJ"/>
+                            <constraint firstAttribute="width" constant="75" id="zVw-H6-8RF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd2-tV-laQ">
+                        <rect key="frame" x="140" y="91" width="39.5" height="19.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBm-Js-pbv">
+                        <rect key="frame" x="137" y="112.5" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.89670138889999995" green="0.89670138889999995" blue="0.89670138889999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRh-q1-d90">
+                        <rect key="frame" x="67" y="152.5" width="28" height="28"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="2v8-Su-8hL"/>
+                            <constraint firstAttribute="height" constant="28" id="84M-Ez-oJo"/>
+                        </constraints>
+                        <state key="normal" image="phone"/>
+                        <connections>
+                            <action selector="makeCall:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yhr-ld-uI9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQG-Yv-81P">
+                        <rect key="frame" x="227" y="155.5" width="25" height="25.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="9Rw-UC-hGK"/>
+                            <constraint firstAttribute="height" constant="25" id="FAs-Z4-lfY"/>
+                        </constraints>
+                        <state key="normal" image="message"/>
+                    </button>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MH0-KA-T0E" customClass="CosmosView" customModule="iCook" customModuleProvider="target">
+                        <rect key="frame" x="107" y="155.5" width="105" height="25.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Za3-a3-RZX"/>
+                            <constraint firstAttribute="width" constant="105" id="jkr-R3-L7f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.9882352941176471" green="0.32941176470588235" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="MH0-KA-T0E" firstAttribute="leading" secondItem="nRh-q1-d90" secondAttribute="trailing" constant="12" id="4Lc-xN-7b0"/>
+                    <constraint firstAttribute="topMargin" secondItem="ZEd-qA-K7H" secondAttribute="top" id="4ja-Py-JSF"/>
+                    <constraint firstItem="nRh-q1-d90" firstAttribute="top" secondItem="dd2-tV-laQ" secondAttribute="bottom" constant="42" id="9Z5-QA-kNw"/>
+                    <constraint firstItem="ZEd-qA-K7H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AX6-fC-JQi"/>
+                    <constraint firstItem="dd2-tV-laQ" firstAttribute="top" secondItem="ZEd-qA-K7H" secondAttribute="bottom" constant="8" id="F7k-0m-xGr"/>
+                    <constraint firstItem="dd2-tV-laQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Lac-Ei-xVl"/>
+                    <constraint firstItem="MH0-KA-T0E" firstAttribute="top" secondItem="fBm-Js-pbv" secondAttribute="bottom" constant="13" id="NwP-hg-dHz"/>
+                    <constraint firstItem="oQG-Yv-81P" firstAttribute="leading" secondItem="MH0-KA-T0E" secondAttribute="trailing" constant="15" id="OfV-WB-2iX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nRh-q1-d90" secondAttribute="bottom" constant="-6.5" id="QKM-GN-9On"/>
+                    <constraint firstItem="dd2-tV-laQ" firstAttribute="top" secondItem="ZEd-qA-K7H" secondAttribute="bottom" constant="8" id="QtP-pV-h3B"/>
+                    <constraint firstItem="oQG-Yv-81P" firstAttribute="leading" secondItem="fBm-Js-pbv" secondAttribute="trailing" constant="40" id="Y9B-bC-paU"/>
+                    <constraint firstItem="fBm-Js-pbv" firstAttribute="leading" secondItem="nRh-q1-d90" secondAttribute="trailing" constant="35" id="crB-5p-suT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dd2-tV-laQ" secondAttribute="bottom" constant="34.5" id="djM-fx-k9y"/>
+                    <constraint firstItem="fBm-Js-pbv" firstAttribute="top" secondItem="dd2-tV-laQ" secondAttribute="bottom" constant="2" id="hSI-zH-QVF"/>
+                    <constraint firstItem="fBm-Js-pbv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jL0-pI-Ao0"/>
+                    <constraint firstItem="ZEd-qA-K7H" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mwO-5a-Yfq"/>
+                    <constraint firstItem="MH0-KA-T0E" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sVn-nn-sGO"/>
+                    <constraint firstItem="oQG-Yv-81P" firstAttribute="top" secondItem="dd2-tV-laQ" secondAttribute="bottom" constant="45" id="t9E-m9-OIg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="AX6-fC-JQi"/>
+                        <exclude reference="QKM-GN-9On"/>
+                        <exclude reference="QtP-pV-h3B"/>
+                        <exclude reference="djM-fx-k9y"/>
+                        <exclude reference="crB-5p-suT"/>
+                        <exclude reference="Y9B-bC-paU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="locationButton" destination="fBm-Js-pbv" id="xMk-LV-vGM"/>
+                <outlet property="mail" destination="oQG-Yv-81P" id="qcq-n4-Qcu"/>
+                <outlet property="phone" destination="nRh-q1-d90" id="kZB-uM-MLS"/>
+                <outlet property="profilePic" destination="ZEd-qA-K7H" id="frs-NP-R2L"/>
+                <outlet property="ratingsView" destination="MH0-KA-T0E" id="CVC-xd-GaI"/>
+                <outlet property="userName" destination="dd2-tV-laQ" id="1rD-ft-oSf"/>
+            </connections>
+            <point key="canvasLocation" x="483" y="416"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="message" width="32" height="32"/>
+        <image name="phone" width="32" height="32"/>
+    </resources>
+</document>

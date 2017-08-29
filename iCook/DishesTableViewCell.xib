@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DishCell" rowHeight="180" id="KGk-i7-Jjw" customClass="DishesTableViewCell" customModule="iCook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="181.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpV-Ob-lpN">
+                        <rect key="frame" x="7" y="3" width="304" height="175.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOP-m3-NX0" customClass="CosmosView" customModule="iCook" customModuleProvider="target">
+                                <rect key="frame" x="76" y="25" width="122" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ZLs-kU-mh1"/>
+                                    <constraint firstAttribute="width" constant="122" id="gYW-wl-bVN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93487610479797978" green="0.93487610479797978" blue="0.93487610479797978" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAg-CJ-3Do">
+                        <rect key="frame" x="11" y="73" width="296" height="102.5"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47e-53-xiE">
+                        <rect key="frame" x="11" y="8" width="60" height="60"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="QYT-Cw-zAe"/>
+                            <constraint firstAttribute="width" constant="60" id="RTP-iV-Npq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1s-CJ-ZM9">
+                        <rect key="frame" x="119.5" y="48" width="82" height="19"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="oGf-Pb-iIZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oGf-Pb-iIZ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REW-2c-ifk">
+                        <rect key="frame" x="82.5" y="9" width="38" height="19"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="PAg-CJ-3Do" firstAttribute="top" secondItem="Z1s-CJ-ZM9" secondAttribute="bottom" constant="8" id="2Ki-0i-Cav"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="37" id="2L6-6B-Hzh"/>
+                    <constraint firstAttribute="topMargin" secondItem="47e-53-xiE" secondAttribute="top" id="6Jh-i6-EFC"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="37" id="8yh-AK-bVd"/>
+                    <constraint firstAttribute="topMargin" secondItem="REW-2c-ifk" secondAttribute="top" constant="-1" id="Anv-Ia-E54"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="top" secondItem="REW-2c-ifk" secondAttribute="bottom" constant="20" id="BCc-eD-vOa"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BNp-jn-rTn"/>
+                    <constraint firstItem="BpV-Ob-lpN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CXt-8E-67K"/>
+                    <constraint firstItem="REW-2c-ifk" firstAttribute="leading" secondItem="47e-53-xiE" secondAttribute="trailing" constant="11" id="ECd-cf-y22"/>
+                    <constraint firstItem="PAg-CJ-3Do" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Eqx-mr-PCc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BpV-Ob-lpN" secondAttribute="trailing" constant="1" id="FlK-pg-dnJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PAg-CJ-3Do" secondAttribute="trailing" constant="5" id="HUd-IO-cZ1"/>
+                    <constraint firstItem="BpV-Ob-lpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="IpO-ja-Ezo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PAg-CJ-3Do" secondAttribute="bottom" constant="-2" id="JtT-vb-oMI"/>
+                    <constraint firstItem="47e-53-xiE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="L7V-sU-G5I"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="top" secondItem="REW-2c-ifk" secondAttribute="top" id="MHx-MG-8Rv"/>
+                    <constraint firstItem="Z1s-CJ-ZM9" firstAttribute="top" secondItem="47e-53-xiE" secondAttribute="bottom" constant="-13" id="Xff-jX-aLm"/>
+                    <constraint firstItem="YOP-m3-NX0" firstAttribute="leading" secondItem="47e-53-xiE" secondAttribute="trailing" constant="12" id="Xz4-jC-ixc"/>
+                    <constraint firstItem="REW-2c-ifk" firstAttribute="leading" secondItem="47e-53-xiE" secondAttribute="trailing" constant="11" id="blY-mx-rMy"/>
+                    <constraint firstItem="YOP-m3-NX0" firstAttribute="top" secondItem="REW-2c-ifk" secondAttribute="bottom" id="fbD-bJ-3m8"/>
+                    <constraint firstItem="BpV-Ob-lpN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="lnE-m5-je7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BpV-Ob-lpN" secondAttribute="bottom" constant="-5" id="msu-E9-6dA"/>
+                    <constraint firstItem="PAg-CJ-3Do" firstAttribute="top" secondItem="Z1s-CJ-ZM9" secondAttribute="bottom" constant="6" id="pTT-Ce-FPz"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="PAg-CJ-3Do" secondAttribute="leading" constant="-3" id="qNx-qU-x3F"/>
+                    <constraint firstItem="PAg-CJ-3Do" firstAttribute="top" secondItem="Z1s-CJ-ZM9" secondAttribute="bottom" constant="7" id="u5s-7E-qL1"/>
+                    <constraint firstItem="BpV-Ob-lpN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="v4w-Uc-uc8"/>
+                    <constraint firstItem="BpV-Ob-lpN" firstAttribute="top" secondItem="Z1s-CJ-ZM9" secondAttribute="bottom" constant="-59.5" id="xgL-b2-t7d"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="CXt-8E-67K"/>
+                        <exclude reference="v4w-Uc-uc8"/>
+                        <exclude reference="xgL-b2-t7d"/>
+                        <exclude reference="2Ki-0i-Cav"/>
+                        <exclude reference="Eqx-mr-PCc"/>
+                        <exclude reference="u5s-7E-qL1"/>
+                        <exclude reference="blY-mx-rMy"/>
+                        <exclude reference="2L6-6B-Hzh"/>
+                        <exclude reference="8yh-AK-bVd"/>
+                        <exclude reference="MHx-MG-8Rv"/>
+                        <exclude reference="Xff-jX-aLm"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="cellBg" destination="BpV-Ob-lpN" id="ubi-lU-zrL"/>
+                <outlet property="dishImage" destination="PAg-CJ-3Do" id="afN-Ui-Hkj"/>
+                <outlet property="dishName" destination="Z1s-CJ-ZM9" id="XwP-nb-cs1"/>
+                <outlet property="ratings" destination="YOP-m3-NX0" id="exD-TO-5Mq"/>
+                <outlet property="sellerName" destination="REW-2c-ifk" id="BgA-jS-l46"/>
+                <outlet property="userImage" destination="47e-53-xiE" id="DU8-ug-6ZO"/>
+            </connections>
+            <point key="canvasLocation" x="439" y="281"/>
+        </tableViewCell>
+    </objects>
+</document>
